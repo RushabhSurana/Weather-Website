@@ -1,0 +1,46 @@
+body {
+  color: #333333;
+  overflow-x: hidden;
+   background: url(../img/bg-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+}
+.centered {
+    padding-top: 100px;
+    text-align: center;
+    background-color: #a2de96;
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  font-size: 0.8rem;
+  background: #212529;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  margin-top: 40px;
+}
+.footer li {
+  display: inline;
+  margin: 20px 15px 0px;
+  list-style-type: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+p .text-lead {
+    font-weight: bold;
+    font-size:18px;
+}
