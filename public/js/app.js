@@ -1,4 +1,4 @@
-console.log('Welcome from the index page!!');
+
 
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
