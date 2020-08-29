@@ -3,6 +3,7 @@ const express = require('express');
 const hbs = require('hbs');
 //console.log(path.join(__dirname,))
 const app = express();
+const port = process.env.PORT || 3000 ;
 //Getting the API functions
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
@@ -29,19 +30,7 @@ app.get('',(req,res) => {
     })
 })
 
-app.get('/about',(req,res) => {
-    res.render('about',{
-        title:'About Me',
-        name:'Rushabh Surana'
-    })
-})
-app.get('/help',(req,res) => {
-    res.render('help',{
-        title:'HELP',
-        msg:'This is a help page',
-        name:'Rushabh Surana'
-    })
-})
+
 app.get('/weather',(req,res) => {
     if(!req.query.address){
         return res.send({
@@ -94,6 +83,7 @@ app.get('/product',(req,res)=>{
 
 })
 
-app.listen(3000,()=>{
-    console.log('Server is up on port 3000')
+app.listen(port,()=>{
+    console.log('Server is up on port '
+    +port);
 })
